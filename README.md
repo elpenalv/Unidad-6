@@ -1,22 +1,22 @@
-# Bus Schedule App
+Dessert Release App - Solution Code
+=================================
+Solution code for the Android Basics with Compose: Dessert Release app.
 
-This folder contains the source code for the Bus Schedule app codelab.
+Introduction
+------------
+The Dessert Release app is a simple app which displays a collection of Android dessert releases. 
+This app is used to teach the concept of Preferences DataStore.
 
-# Introduction
-The Bus Schedule app displays a list of bus stops and arrival times. Tapping a bus stop on the first
-screen will display a list of all arrival times for that particular stop.
+Pre-requisites
+--------------
 
-The bus stops are stored in a Room database. Schedule items are represented by the `Schedule` class 
-and queries on the data table are made by the `ScheduleDao` class. The app includes a view model to
-access the `ScheduleDao` and format data to be display in a list.
-
-# Pre-requisites
 * Experience with Kotlin syntax.
-* Experience with Jetpack Compose.
 * How to create and run a project in Android Studio.
-* Basic knowledge of SQL databases and performing basic queries.
+* How to create composable functions
 
-# Getting Started
+Getting Started
+---------------
+
 1. Install Android Studio, if you don't already have it.
 2. Download the sample.
 3. Import the sample into Android Studio.

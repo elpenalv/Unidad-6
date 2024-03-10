@@ -13,19 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
+package com.example.busschedule
+
+import android.app.Application
+import com.example.busschedule.data.AppDatabase
+
+class BusScheduleApplication: Application() {
+    val database: AppDatabase by lazy { AppDatabase.getDatabase(this) }
 }
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-rootProject.name = "Dessert Release"
-include(":app")

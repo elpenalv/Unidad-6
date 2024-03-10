@@ -13,19 +13,31 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-pluginManagement {
-    repositories {
-        google()
-        mavenCentral()
-        gradlePluginPortal()
-    }
+package com.example.dessertrelease.data.local
+
+/*
+ * Set data for Android Release dessert name
+ * the list contain distinct sequential dessert name
+ */
+object LocalDessertReleaseData {
+    val dessertReleases = listOf(
+        "Cupcake",
+        "Donut",
+        "Eclair",
+        "Froyo",
+        "Gingerbread",
+        "Honeycomb",
+        "Ice Cream Sandwich",
+        "Jelly Bean",
+        "KitKat",
+        "Lollipop",
+        "Marshmallow",
+        "Nougat",
+        "Oreo",
+        "Pie",
+        "Quince Tart",
+        "Red Velvet Cake",
+        "Snow Cone",
+        "Tiramisu"
+    )
 }
-dependencyResolutionManagement {
-    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
-rootProject.name = "Dessert Release"
-include(":app")
