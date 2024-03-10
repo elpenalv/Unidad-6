@@ -1,29 +1,23 @@
-Inventory app
-==================================
+# Bus Schedule App
 
-Solution code for Android Basics with Compose.
+This folder contains the source code for the Bus Schedule app codelab.
 
-Introduction
-------------
+# Introduction
+The Bus Schedule app displays a list of bus stops and arrival times. Tapping a bus stop on the first
+screen will display a list of all arrival times for that particular stop.
 
-This app is an Inventory tracking app. Demos how to add, update, sell, and delete items from the local database.
-This app demonstrated the use of Android Jetpack component [Room](https://developer.android.com/training/data-storage/room) database.
-The app also leverages [ViewModel](https://developer.android.com/topic/libraries/architecture/viewmodel),
-[Flow](https://developer.android.com/kotlin/flow),
-and [Navigation](https://developer.android.com/topic/libraries/architecture/navigation/).
+The bus stops are stored in a Room database. Schedule items are represented by the `Schedule` class 
+and queries on the data table are made by the `ScheduleDao` class. The app includes a view model to
+access the `ScheduleDao` and format data to be display in a list.
 
-Pre-requisites
---------------
+# Pre-requisites
+* Experience with Kotlin syntax.
+* Experience with Jetpack Compose.
+* How to create and run a project in Android Studio.
+* Basic knowledge of SQL databases and performing basic queries.
 
-You need to know:
-- How to create and use composables.
-- How to navigate between composables, and pass data between them.
-- How to use architecture components including ViewModel, Flow, StateFlow and StateUi.
-- How to use coroutines for long-running tasks.
-- SQLite database and the SQLite query language
-
-
-Getting Started
----------------
-
-1. Download and run the app.
+# Getting Started
+1. Install Android Studio, if you don't already have it.
+2. Download the sample.
+3. Import the sample into Android Studio.
+4. Build and run the sample.
